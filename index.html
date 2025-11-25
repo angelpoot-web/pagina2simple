@@ -105,20 +105,24 @@
     }
 
    /* ===== Responsivo ===== */
-    @media (max-width: 600px) {
-    header h1 {
-     font-size: 2em;
-   }
-   .carousel {
-     padding: 10px;
-   }
-   .carousel img {
-     min-width: 80%;     /* más compacto que 90% */
-     max-width: 100%;    /* nunca más ancho que la pantalla */
-     height: 150px;      /* altura reducida para móvil */
-     object-fit: cover;  /* mantiene proporción */
-   }
- }
+   @media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6em;   /* título más compacto */
+  }
+
+  .carousel {
+    padding: 8px;
+    gap: 10px;
+  }
+
+  .carousel img {
+    min-width: 70%;     /* cada imagen ocupa 70% del ancho */
+    max-width: 100%;    /* nunca más ancho que la pantalla */
+    height: 120px;      /* altura fija más pequeña */
+    object-fit: cover;  /* recorta sin deformar */
+    border-radius: 8px; /* esquinas suaves */
+  }
+}
   </style>
 </head>
 <body>
@@ -164,4 +168,5 @@
 </body>
 
 </html>
+
 
